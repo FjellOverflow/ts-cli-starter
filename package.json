@@ -1,0 +1,35 @@
+{
+  "name": "ts-cli-starter",
+  "version": "0.0.1",
+  "description": "A minimal starter for a CLI written with TypeScript",
+  "author": "FjellOverflow",
+  "license": "GPL-3.0-only",
+  "keywords": [
+    "typescript",
+    "cli",
+    "starter",
+    "template"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "ts-cli-starter": "lib/cli.js"
+  },
+  "scripts": {
+    "dev": "tsc && node lib/cli.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "update-deps": "taze -w",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.4.3",
+    "@tsconfig/recommended": "^1.0.3",
+    "eslint": "^8.55.0",
+    "taze": "^0.13.0",
+    "typescript": "^5.3.3"
+  }
+}
