@@ -79,8 +79,6 @@ import { ExampleType, exampleFunction } from 'ts-cli-starter'
 Add as npm scripts to call binary.
 ```json
 {
-  // ...
-
   "scripts": {
     "dev": "ts-cli-starter dev",
     "build": "ts-cli-starter build --prod"
